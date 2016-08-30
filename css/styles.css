@@ -112,26 +112,24 @@ body > footer > form input {
 	background: none;
 	border: none;
 	font-size: 18px;
-	padding: 0 15px;
 	height: 36px;
 	line-height: 36px;
-	width: 250px;
+	padding: 0 15px;
+	width: 200px;
 }
-body > footer > form button {
-	border: 1px solid #555;
+body > footer > form a.fa {
 	background: rgba(0,200,0,.5);
-}
-body > footer > form button.fa {
 	border-radius: 18px;
+	border: 1px solid #555;
     color: #fff;
+    display: inline-block;
+    font-size: 18px;
     height: 32px;
+    line-height: 32px;
     position: relative;
-    right: 2px;
+    right: 1px;
+    text-align: center;
+    text-decoration: none;
     top: -1px;
     width: 32px;
-}
-@-moz-document url-prefix() { 
-	body > footer > form button.fa {
-	    top: -2px;
-	}
 }
