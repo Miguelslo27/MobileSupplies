@@ -1,0 +1,73 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+img {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+.logo-max {
+	margin: auto;
+	width: 210px;
+}
+
+body {
+	background-attachment: fixed;
+	background-image: url('/imgs/back.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+body > header,
+body > footer {
+	height: 80px;
+	left: 0;
+	position: absolute;
+	right: 0;
+	z-index: 1;
+}
+body > header {
+	top: 0;
+}
+body > footer {
+	bottom: 0;
+}
+body > section {
+	background: rgba(255,255,255,.5);
+	bottom: 80px;
+	left: 0;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	top: 80px;
+	vertical-align: center;
+	z-index: 2;
+}
+body > section > .centered {
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+body > section > .top-shadow,
+body > section > .bottom-shadow {
+	background-image: url('/imgs/shadow.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 15px;
+}
+body > section > .top-shadow {
+	left: 0;
+    position: absolute;
+    right: 0;
+    top: -15px;
+}
+body > section > .bottom-shadow {
+	left: 0;
+	position: absolute;
+	right: 0;
+	bottom: -15px;
+	transform: rotate(180deg);
+}
