@@ -71,3 +71,6 @@ body > section > .bottom-shadow {
 	bottom: -15px;
 	transform: rotate(180deg);
 }
+body > section h3 {
+	margin: 20px 0 0;
+}
