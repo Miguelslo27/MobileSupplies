@@ -97,3 +97,41 @@ body > section > .bottom-shadow {
 body > section h3 {
 	margin: 20px 0 0;
 }
+body > footer {
+	box-sizing: border-box;
+    text-align: center;
+    padding: 22px 0;
+}
+body > footer > form {
+	border-radius: 19px;
+	border: 1px solid #555;
+	display: inline-block;
+	height: 36px;
+}
+body > footer > form input {
+	background: none;
+	border: none;
+	font-size: 18px;
+	padding: 0 15px;
+	height: 36px;
+	line-height: 36px;
+	width: 250px;
+}
+body > footer > form button {
+	border: 1px solid #555;
+	background: rgba(0,200,0,.5);
+}
+body > footer > form button.fa {
+	border-radius: 18px;
+    color: #fff;
+    height: 32px;
+    position: relative;
+    right: 2px;
+    top: -1px;
+    width: 32px;
+}
+@-moz-document url-prefix() { 
+	body > footer > form button.fa {
+	    top: -2px;
+	}
+}
