@@ -114,7 +114,7 @@ body > footer > form input {
 	font-size: 18px;
 	height: 36px;
 	line-height: 36px;
-	padding: 0 15px;
+	padding: 0 0 0 15px;
 	width: 200px;
 }
 body > footer > form a.fa {
@@ -133,3 +133,26 @@ body > footer > form a.fa {
     top: -1px;
     width: 32px;
 }
+
+/*@media (max-width: 800px) {*/
+	body > footer {
+		padding: 15px 0;
+	}
+	body > footer > form {
+		border-radius: 26px;
+		height: 50px;
+	}
+	body > footer > form input {
+		height: 50px;
+		line-height: 50px;
+		width: 220px;
+	}
+	body > footer > form a.fa {
+		border-radius: 24px;
+	    height: 46px;
+	    line-height: 46px;
+	    right: 1px;
+	    top: -1px;
+	    width: 46px;
+	}
+/*}*/
