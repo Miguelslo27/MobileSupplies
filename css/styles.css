@@ -40,6 +40,7 @@ body > header > nav {
 body > header > nav a {}
 body > header > nav a:hover {}
 body > header > nav a.fa {
+	background: rgba(255,255,255,.5);
 	display: inline-block;
 	margin: 0 5px;
 	line-height: 30px;
@@ -49,13 +50,19 @@ body > header > nav a.fa {
 	border-radius: 16px;
 	color: #555;
 	text-decoration: none;
+	transition: all .5s ease;
 }
 body > header > nav a.fa.fa-envelope-o {
 	line-height: 28px;
 	position: relative;
 	top: -1px;
+	transition: all .2s ease;
 }
-body > header > nav a.fa:hover {}
+body > header > nav a.fa:hover {
+	border-color: #fff;
+	color: #fff;
+	background: rgba(65,103,177,.5);
+}
 body > section {
 	background: rgba(255,255,255,.5);
 	bottom: 80px;
@@ -100,13 +107,14 @@ body > section h3 {
 body > footer {
 	box-sizing: border-box;
     text-align: center;
-    padding: 22px 0;
+    padding: 15px 0;
 }
 body > footer > form {
-	border-radius: 19px;
+	background: rgba(255, 255, 255, 0.5);
+	border-radius: 26px;
 	border: 1px solid #555;
 	display: inline-block;
-	height: 36px;
+	height: 50px;
 }
 body > footer > form input {
 	background: none;
@@ -116,6 +124,7 @@ body > footer > form input {
 	line-height: 36px;
 	padding: 0 0 0 15px;
 	width: 200px;
+	color: #555;
 }
 body > footer > form a.fa {
 	background: rgba(0,200,0,.5);
@@ -135,12 +144,10 @@ body > footer > form a.fa {
 }
 
 /*@media (max-width: 800px) {*/
-	body > footer {
-		padding: 15px 0;
-	}
 	body > footer > form {
 		border-radius: 26px;
 		height: 50px;
+		/*background: rgba(0, 0, 0, 0.5);*/
 	}
 	body > footer > form input {
 		height: 50px;
