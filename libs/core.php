@@ -217,8 +217,6 @@ function subscribe($email) {
 		$db->where("email", $email);
 		$lead = $db->getOne("suscripcion");
 
-		debugging("Email", ($lead ? 'Existe' : 'no existe'), true);
-
 		if(!$lead) {
 			// Chequeo la existencia de usuario con el email
 			$db->where("email", $email);
