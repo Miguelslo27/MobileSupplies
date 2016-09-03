@@ -1,5 +1,5 @@
 <?php
-$relative = $GLOBALS['relative'];
+$relative = isset ($GLOBALS['relative']) ? $GLOBALS['relative'] : './';
 $config   = array(
 	'templatesPath' => $relative.'/templates/',
 	'db_host'       => 'localhost',
