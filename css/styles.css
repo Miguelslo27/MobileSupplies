@@ -104,6 +104,22 @@ body > section > .bottom-shadow {
 body > section h3 {
 	margin: 20px 0 0;
 }
+body > section p.success,
+body > section p.error {
+	border: 1px solid;
+    border-radius: 15px;
+    padding: 15px;
+}
+body > section p.success {
+	border-color: rgb(0,200,0);
+	background: rgba(0,200,0,.3);
+	color: rgb(0,150,0);
+}
+body > section p.error {
+	border-color: rgb(200,0,0);
+	background: rgba(200,0,0,.3);
+	color: rgb(150,0,0);
+}
 body > section .subscribe-signal {
 	bottom: 0;
     color: rgba(0, 200, 0, 0.5);
